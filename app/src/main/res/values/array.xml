@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="during_class">
+        <item>Mute</item>
+        <item>Vibrate</item>
+        <item>Disable</item>
+    </string-array>
+    <string-array name="during_class_values">
+        <item >"0"</item>
+        <item >"1"</item>
+        <item >"2"</item>
+    </string-array>
+    <string-array name="data">
+        <item>Data off during class</item>
+        <item>Disable</item>
+    </string-array>
+    <string-array name="dataV">
+        <item >"0"</item>
+        <item >"1"</item>
+    </string-array>
+    <string-array name="not_type">
+        <item>Silent</item>
+        <item>Vibrate</item>
+        <item>Sound</item>
+    </string-array>
+    <string-array name="not_type_values">
+        <item >"0"</item>
+        <item >"1"</item>
+        <item>"2"</item>
+    </string-array>
+    <string-array name="themeType">
+        <item>Blue (Default)</item>
+        <item>Red</item>
+        <item>Green</item>
+        <item>Dark</item>
+    </string-array>
+    <string-array name="themeValues">
+        <item >"0"</item>
+        <item >"1"</item>
+        <item>"2"</item>
+        <item>"3"</item>
+    </string-array>
+</resources>

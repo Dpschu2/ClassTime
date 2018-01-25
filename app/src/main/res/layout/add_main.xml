@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/not"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/classInfo"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorPrimary"
+        android:text="Class info"
+        android:textSize="20sp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingStart="20dp"
+        android:paddingRight="0dp"
+        android:paddingEnd="0dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:id="@+id/line"
+        android:layout_height="1dp"
+        android:elevation="4dp"
+        android:background="@android:color/holo_blue_light"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorDayButtonNormal1"/>
+
+    <TimePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:layout_gravity="center_horizontal"
+        android:timePickerMode="spinner"
+        android:hapticFeedbackEnabled="true"
+        android:id="@+id/notification_timepicker" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/rel"
+        android:layout_marginBottom="5dp">
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/reminder_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/remind"
+            android:layout_toRightOf="@+id/remind"
+            android:layout_gravity="end"
+            android:checked="false"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/remind"
+            android:text="Reminder"
+            android:gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="15sp"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Repeating"
+            android:layout_toLeftOf="@+id/repeating_switch"
+            android:textSize="15sp"
+            android:layout_toStartOf="@+id/repeating_switch"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical|end"/>
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/repeating_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:checked="true" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.28"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:gravity="end|center"
+            android:text="@string/goal_string" />
+
+        <EditText
+            android:id="@+id/notification_goal"
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:textColor="@color/darkGray"
+            android:gravity="center"
+            android:layout_marginTop="-4dp"
+            android:layout_marginBottom="-4dp"
+            android:padding="2dp"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/notification_goal_type"
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:gravity="start|center"
+            android:text="@string/goal_type_minutes" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="@color/colorDayButtonNormal1"/>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:visibility="visible"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.27"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:gravity="end|center"
+            android:text="@string/class_length" />
+
+        <EditText
+            android:id="@+id/classDurationHours"
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:textColor="@color/darkGray"
+            android:gravity="center"
+            android:layout_marginTop="-4dp"
+            android:layout_marginBottom="-4dp"
+            android:padding="2dp"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.10"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:gravity="start|center"
+            android:text="@string/hours" />
+        <EditText
+            android:id="@+id/classDurationMinutes"
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:textColor="@color/darkGray"
+            android:gravity="center"
+            android:layout_marginTop="-4dp"
+            android:layout_marginBottom="-4dp"
+            android:padding="2dp"
+            android:inputType="number" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:gravity="start|center"
+            android:text="@string/minutes" />
+    </android.support.v7.widget.LinearLayoutCompat>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="@color/colorDayButtonNormal1"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:id="@+id/buttonFrame"
+        android:baselineAligned="false"
+        android:paddingTop="2dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+
+        <me.grantland.widget.AutofitLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ToggleButton
+                android:id="@+id/sunBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:fontFamily="sans-serif-light"
+                android:elevation="2dp"
+                android:textOff="S"
+                android:textOn="S" />
+        </me.grantland.widget.AutofitLayout>
+
+        <me.grantland.widget.AutofitLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/monBtn"
+                android:fontFamily="sans-serif-light"
+                android:elevation="2dp"
+                android:textOff="M"
+                android:textOn="M"/>
+        </me.grantland.widget.AutofitLayout>
+
+        <me.grantland.widget.AutofitLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:elevation="2dp"
+                android:id="@+id/tueBtn"
+                android:fontFamily="sans-serif-light"
+                android:textOff="T"
+                android:textOn="T"/>
+        </me.grantland.widget.AutofitLayout>
+
+        <me.grantland.widget.AutofitLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/wedBtn"
+                android:elevation="2dp"
+                android:fontFamily="sans-serif-light"
+                android:textOff="W"
+                android:textOn="W"/>
+        </me.grantland.widget.AutofitLayout>
+
+        <me.grantland.widget.AutofitLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/thuBtn"
+                android:elevation="2dp"
+                android:fontFamily="sans-serif-light"
+                android:textOff="T"
+                android:textOn="T"/>
+        </me.grantland.widget.AutofitLayout>
+
+        <me.grantland.widget.AutofitLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/friBtn"
+                android:elevation="2dp"
+                android:fontFamily="sans-serif-light"
+                android:textOff="F"
+                android:textOn="F"/>
+        </me.grantland.widget.AutofitLayout>
+
+        <me.grantland.widget.AutofitLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/satBtn"
+                android:elevation="2dp"
+                android:fontFamily="sans-serif-light"
+                android:textOff="S"
+                android:textOn="S"/>
+        </me.grantland.widget.AutofitLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/notification_description_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/description"
+            android:paddingTop="0dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:singleLine="true"
+                android:padding="12dp"
+                android:textColor="@color/textPrimaryDark"
+                android:ems="10"
+                android:id="@+id/notification_description"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageButton
+            android:id="@+id/notification_submit"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/colorPrimary"
+            android:background="@drawable/send_button"/>
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</LinearLayout>

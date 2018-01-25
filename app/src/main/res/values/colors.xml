@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#03a7ff</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#1dd9f6</color>
+    <color name="colorPrimary2">#f53500</color>
+    <color name="colorPrimaryDark2">#ff828f</color>
+    <color name="colorAccent2">#ff523f</color>
+    <color name="colorPrimary3">#07d300</color>
+    <color name="colorPrimaryDark3">#92fb92</color>
+    <color name="colorAccent3">#00fc8f</color>
+    <color name="darker">#313131</color>
+    <color name="dark">#3f3f3f</color>
+    <color name="colorAlarm">#eaeaea</color>
+    <color name="toggledark">#0b0b0b</color>
+    <color name="toggledark2">#353535</color>
+    <color name="colorDayButtonNormal">#BDBDBD</color>
+    <color name="colorDayButtonNormal1">#d0d0d0</color>
+    <color name="textPrimaryDark">#99000000</color>
+    <color name="darkGray">#757575</color>
+    <color name="trans">#00ffffff</color>
+    <color name="darkGray1">#a3a3a3</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#222222</color>
+    <color name="alarmbackground">#dcdcdc</color>
+</resources>

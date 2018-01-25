@@ -1,0 +1,182 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="4dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:focusable="true"
+    android:id="@+id/cardBack"
+    card_view:cardElevation="2dp"
+    card_view:cardBackgroundColor="@color/cardview_light_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/reminder_switch1"
+            android:layout_width="50sp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="6dip"
+            android:layout_marginEnd="6dip"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".7"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/reminder_description"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:text="@string/description"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/reminder_days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/sunText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dip"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:padding="4dp"
+                    android:text="S"
+                    android:textColor="@color/colorDayButtonNormal"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/monText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dip"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:padding="2dp"
+                    android:text="M"
+                    android:textColor="@color/colorDayButtonNormal"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tueText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dip"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:padding="2dp"
+                    android:text="T"
+                    android:textColor="@color/colorDayButtonNormal"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/wedText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dip"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:padding="2dp"
+                    android:text="W"
+                    android:textColor="@color/colorDayButtonNormal"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/thuText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dip"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:padding="2dp"
+                    android:text="T"
+                    android:textColor="@color/colorDayButtonNormal"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/friText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dip"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:padding="2dp"
+                    android:text="F"
+                    android:textColor="@color/colorDayButtonNormal"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/satText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dip"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:padding="2dp"
+                    android:text="S"
+                    android:textColor="@color/colorDayButtonNormal"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+        <TextView
+            android:id="@+id/reminder_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|center_vertical"
+            android:layout_gravity="end"
+            android:paddingTop="6dp"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:paddingBottom="6dp"
+            android:text="@string/time"
+            android:textSize="15sp" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reminder:"
+                    android:id="@+id/reminder_text"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/colorDayButtonNormal"
+                    android:paddingTop="3dp"
+                    android:textSize="10sp"
+                    android:layout_gravity="left"
+                    />
+
+            <TextView
+                android:id="@+id/reminder_time_alarm"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical|end"
+                android:layout_gravity="end"
+                android:paddingTop="3dp"
+                android:paddingRight="16dp"
+                android:text="@string/time2"
+                android:textSize="10sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
